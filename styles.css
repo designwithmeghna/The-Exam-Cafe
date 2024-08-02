@@ -22,6 +22,7 @@ body {
 
 header {
   background-color: #fff1de;
+  font-family: 'Poppins';
 }
 
 h1 {
@@ -63,12 +64,19 @@ li a {
   text-decoration: none;
 }
 
+li a:hover {
+  /*  1.3 Make sure when you roll over the navigation items they change colour. */
+  color: black;
+}
+
 #hero {
   width:100%;
 }
 
 .section-headline {
   color:#6d3e00;
+  /* 1.1 Use two webfonts to change some headings and the paragraph text. */
+  font-family: 'Poppins';
 }
 
 label {
@@ -98,6 +106,11 @@ input[type=submit] {
 
 #order-up {
   color:#6d3e00;
+  /* 1.1 Use two webfonts to change some headings and the paragraph text. */
+  font-family: 'Open Sans';
+  font-size: x-large;
+  text-align: left;
+  font-weight: "bolder" ;
 }
 
 contact-info h2 {
@@ -118,6 +131,8 @@ footer {
 
 #footer-heading {
   text-align: center;
+  font-family: 'Poppins';
+  color:#6d3e00;
 }
 
 .social-icons {
@@ -145,7 +160,11 @@ footer img {
 
 /* 6. There should be some text below the headline “About” but it’s not showing up. */
 .about-text {
-color: #9c5b00;
+color: #000000;
+
+/* 1.1 Use two webfonts to change some headings and the paragraph text. */
+font-family: 'Open Sans';
+font-size: medium;
 
 }
 
