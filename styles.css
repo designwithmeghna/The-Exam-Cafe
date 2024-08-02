@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+}
+
+[class*="col-"] {
+  float:left;
+  padding:15px;
+}
+
+body {
+  max-width: 1300px;
+  /* 1. This below block will allow the entire page to be centered so that there is equal space on both sides */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: #fff1de;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(151, 98, 0);
+  font-size: 36px;
+  padding-top:15px;
+}
+
+/* 2. The styling of the logo isn’t working. Changed "." -> "#" for id */
+#logo {
+  width:150px;
+  margin: 0 auto;
+  display:block;
+}
+
+nav {
+  text-align:center;
+  background-color: #6d3e00;
+  padding: 10px 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px 15px;
+  /* 4. The nav links should be in a line and not on top of one another.  */
+  display: inline;
+}
+
+li a {
+  color: white;
+  margin: 0 10px;
+  padding: 10px 15px;
+
+  /* 3. Remove the underline from the navigation links. */
+  text-decoration: none;
+}
+
+#hero {
+  width:100%;
+}
+
+.section-headline {
+  color:#6d3e00;
+}
+
+label {
+  font-size: 18px;
+}
+
+input[type=text] {
+  width:100%;
+  padding: 10px 20px;
+  margin:10px 0px;
+  border-radius: 10px;
+}
+
+#comments {
+  height:100px;
+}
+
+input[type=submit] {
+  width:150px;
+  background-color: #A4BBF4;
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  border-radius:10px;
+}
+
+#order-up {
+  color:#6d3e00;
+}
+
+contact-info h2 {
+  color:#0B2975;
+}
+
+contact-text a {
+  text-decoration: none;
+}
+
+iframe {width:100%}
+
+footer {
+  background-color:#fff1de;
+  width:100%;
+  text-align: center;
+}
+
+#footer-heading {
+  text-align: center;
+}
+
+.social-icons {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+footer img {
+  width:75px;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* 6. There should be some text below the headline “About” but it’s not showing up. */
+.about-text {
+color: #9c5b00;
+
+}
+
+
+@media only screen and (max-width:500px) {
+
+  body{
+    background-color: red;
+  }
+/* <!-- 9. The website should be responsive but it’s not working. --> */
+  [class*="col-"] {
+    width:100%;
+  }
+
+  nav{
+    padding: 1px 5px;
+  }
+
+  ul{
+    padding: 0;
+  }
+
+  li{
+    padding: 0;
+  }
+
+}
